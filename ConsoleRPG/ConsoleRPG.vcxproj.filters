@@ -18,66 +18,66 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert.cpp">
+    <ClCompile Include="JsonBox\src\Convert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Escaper.cpp">
+    <ClCompile Include="JsonBox\src\Escaper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\IndentCanceller.cpp">
+    <ClCompile Include="JsonBox\src\IndentCanceller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Indenter.cpp">
+    <ClCompile Include="JsonBox\src\Indenter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\JsonParsingError.cpp">
+    <ClCompile Include="JsonBox\src\JsonParsingError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\JsonWritingError.cpp">
+    <ClCompile Include="JsonBox\src\JsonWritingError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\SolidusEscaper.cpp">
+    <ClCompile Include="JsonBox\src\SolidusEscaper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Value.cpp">
+    <ClCompile Include="JsonBox\src\Value.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\JsonBox.h">
+    <ClInclude Include="JsonBox\include\JsonBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\Convert.h">
+    <ClInclude Include="JsonBox\include\JsonBox\Convert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\Escaper.h">
+    <ClInclude Include="JsonBox\include\JsonBox\Escaper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\Export.h">
+    <ClInclude Include="JsonBox\include\JsonBox\Export.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\Grammar.h">
+    <ClInclude Include="JsonBox\include\JsonBox\Grammar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\IndentCanceller.h">
+    <ClInclude Include="JsonBox\include\JsonBox\IndentCanceller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\Indenter.h">
+    <ClInclude Include="JsonBox\include\JsonBox\Indenter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\JsonParsingError.h">
+    <ClInclude Include="JsonBox\include\JsonBox\JsonParsingError.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\JsonWritingError.h">
+    <ClInclude Include="JsonBox\include\JsonBox\JsonWritingError.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\OutputFilter.h">
+    <ClInclude Include="JsonBox\include\JsonBox\OutputFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\SolidusEscaper.h">
+    <ClInclude Include="JsonBox\include\JsonBox\SolidusEscaper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JsonBox\Value.h">
+    <ClInclude Include="JsonBox\include\JsonBox\Value.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
