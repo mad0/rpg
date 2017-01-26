@@ -103,6 +103,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\Programy\Programy\VS C++\ConsoleRPG\ConsoleRPG\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\Programy\Programy\VS C++\ConsoleRPG\ConsoleRPG\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,6 +149,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Convert.cpp" />
+    <ClCompile Include="src\Escaper.cpp" />
+    <ClCompile Include="src\IndentCanceller.cpp" />
+    <ClCompile Include="src\Indenter.cpp" />
+    <ClCompile Include="src\JsonParsingError.cpp" />
+    <ClCompile Include="src\JsonWritingError.cpp" />
+    <ClCompile Include="src\SolidusEscaper.cpp" />
+    <ClCompile Include="src\Value.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\JsonBox.h" />
+    <ClInclude Include="include\JsonBox\Convert.h" />
+    <ClInclude Include="include\JsonBox\Escaper.h" />
+    <ClInclude Include="include\JsonBox\Export.h" />
+    <ClInclude Include="include\JsonBox\Grammar.h" />
+    <ClInclude Include="include\JsonBox\IndentCanceller.h" />
+    <ClInclude Include="include\JsonBox\Indenter.h" />
+    <ClInclude Include="include\JsonBox\JsonParsingError.h" />
+    <ClInclude Include="include\JsonBox\JsonWritingError.h" />
+    <ClInclude Include="include\JsonBox\OutputFilter.h" />
+    <ClInclude Include="include\JsonBox\SolidusEscaper.h" />
+    <ClInclude Include="include\JsonBox\Value.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
