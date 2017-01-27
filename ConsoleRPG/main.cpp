@@ -4,7 +4,7 @@
 
 int main() {
 	JsonBox::Value f;
-	f.loadFromFile("data.ort");
+	f.loadFromFile("data2.ort");
 	JsonBox::Object o = f.getObject();
 	
 	for (auto i : o) {
