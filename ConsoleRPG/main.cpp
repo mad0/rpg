@@ -8,7 +8,7 @@ int main() {
 	JsonBox::Object o = f.getObject();
 	
 	for (auto i : o) {
-		std::string w = i.second;
+		std::string w = i.first;
 		std::cout << w << "\n";
 	}
 		
