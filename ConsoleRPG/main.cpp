@@ -4,16 +4,18 @@
 #include <map>
 
 int main() {
-	std::map <std::string, std::string> data;
+	std::map <std::string, JsonBox::Value> data;
 	JsonBox::Value f;
 	f.loadFromFile("data2.ort");
 	JsonBox::Object o = f.getObject();
 	
 	for (auto i : o) {
 		std::string z = i.first;
-		auto w = i.second;
-
-		std::cout <<w;
+		data[z] = i.second;
+	}
+	for (auto c : data) {
+		std::cout <<"Pierwszy: "<< c.first << "\n";
+		std::cout << "Drugi: "<<c.second["doors"].getString() << "\n";
 	}
 		
 
