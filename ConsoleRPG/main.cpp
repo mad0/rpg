@@ -78,7 +78,7 @@ int main() {
 	wsk[2]->fun();
 	wsk[3]->fun();
 	*/
-	klasa()->fun();
+	dane.top()->fun();
 	return 0;
 };
 
