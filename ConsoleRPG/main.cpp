@@ -2,6 +2,8 @@
 #include "JsonBox.h"
 #include <string>
 #include <map>
+#include <stack>
+
 
 
 class Baza {
@@ -20,9 +22,17 @@ public:
 
 };
 
+std::stack <Baza*> dane;
+
+Baza* klasa() {
+	return dane.top();
+}
 
 int main() {
-	std::map <std::string, JsonBox::Value> data;
+	
+	Baza **wsk = new Baza* [4];
+	//dane.push(wsk);
+	/*std::map <std::string, JsonBox::Value> data;
 	JsonBox::Value f;
 	f.loadFromFile("data2.ort");
 	JsonBox::Object o = f.getObject();
@@ -35,7 +45,10 @@ int main() {
 		std::cout <<"Pierwszy: "<< c.first << "\n";
 		std::cout << "Drugi: "<<c.second["doors"].getString() << "\n";
 	}*/
-	Pochodna *wsk = new Pochodna();
-	wsk->fun();
+	//Pochodna *wsk = new Pochodna();
+	//wsk->fun();
+	//klasa()->fun();
+	//std::cout << dane.size() << "\n";
 	return 0;
 };
+
