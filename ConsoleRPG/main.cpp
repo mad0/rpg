@@ -3,14 +3,19 @@
 #include <string>
 #include <map>
 #include <stack>
+#include <memory>
 
 
 
 class Baza {
 public:
 	Baza() {
+		std::cout << "UTWORZENIE BAZOWA\n";
 		//++ile;
 		//std::cout << "POCHODNA: " << ile << "\n";
+	}
+	~Baza() {
+		std::cout << "USUNIECIE: BAZOWA\n";
 	}
 	virtual void fun() {
 		std::cout << "BAZOWA\n";
@@ -24,18 +29,23 @@ private:
 public:
 	static int ile;
 	Pochodna(const std::string &z) : t(z) {
+		std::cout << "UTWORZENIE POCHODNA\n";
 		++ile;
 	}
 	
+	~Pochodna() {
+		std::cout << "USUNIECIE: Pochodna\n";
+	}
+
 	void fun() {
 		std::cout << "POCHODNA: Obiekt nr: " << t << "\n";
 	}
 
 };
 
-std::stack <Baza*> dane;
+std::stack<Baza*> dane;
 
-Baza* klasa() {
+Baza* run() {
 	std::cout << "Ilosc obiektow na stosie: " << dane.size() << "\n";
 	return dane.top();
 }
@@ -44,17 +54,18 @@ int Pochodna::ile = 0;
 
 int main() {
 	
-	Baza **wsk = new Baza* [4];
-	//Baza *wsk = new Pochodna();
-	wsk[0] = new Pochodna("a");
-	wsk[1] = new Pochodna("b");
-	wsk[2] = new Pochodna("c");
-	wsk[3] = new Pochodna("d");
-	dane.push(wsk[0]);
-	dane.push(wsk[1]);
-	dane.push(wsk[2]);
-	dane.push(wsk[3]);
-	dane.pop();
+	{
+		Baza *p1(new Pochodna("1"));
+		Baza *p2(new Pochodna("2"));
+		dane.push(p1);
+		dane.push(p2);
+		run();
+		delete dane.top();
+		dane.pop();
+		dane.top()->fun();
+
+	}
+
 	/*std::map <std::string, JsonBox::Value> data;
 	JsonBox::Value f;
 	f.loadFromFile("data2.ort");
@@ -78,7 +89,7 @@ int main() {
 	wsk[2]->fun();
 	wsk[3]->fun();
 	*/
-	dane.top()->fun();
+	//dane.top()->fun();
 	return 0;
 };
 
